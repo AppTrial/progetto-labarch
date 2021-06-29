@@ -1,7 +1,7 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file           : main.c  TEST1 CIAO
+  * @file           : main.c  TEST1 CIAO TEST2
   * @brief          : Main program body
   ******************************************************************************
   * @attention
