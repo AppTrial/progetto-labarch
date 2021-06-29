@@ -1,0 +1,2 @@
+noarm_cmsis.c:11:6:nonARM_product	8	static
+noarm_cmsis.c:23:6:noARM_FIR	20	static
