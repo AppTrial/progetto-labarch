@@ -1,7 +1,7 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file           : main.c  1 2 3 4 5 6 7 8 9 10 11
+  * @file           : main.c
   * @brief          : Campionamento accellerometro a 100Hz con applicazione di filtro FIR passa
   * 	              basso per filtrare ciascun asse dell'accellerometro a 4Hz. Calcolo
   * 	              orientamento planare e accensione del led più vicino al suolo.
