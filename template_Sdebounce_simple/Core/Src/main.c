@@ -1,7 +1,7 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file           : main.c mannaggia la madonna
+  * @file           : main.c mannaggia la madonna e mannaggia a dio
   * @brief          : Campionamento accellerometro a 100Hz con applicazione di filtro FIR passa
   * 	              basso per filtrare ciascun asse dell'accellerometro a 4Hz. Calcolo
   * 	              orientamento planare e accensione del led più vicino al suolo.
