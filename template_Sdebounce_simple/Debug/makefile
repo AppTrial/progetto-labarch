@@ -72,8 +72,8 @@ all: main-build
 main-build: template_Sdebounce_simple.elf secondary-outputs
 
 # Tool invocations
-template_Sdebounce_simple.elf: $(OBJS) $(USER_OBJS) C:\Users\Marcello\Downloads\SOL_Lab9_acc_spi_avg_usart_DSP.zip_expanded\SOL_Lab9_acc_spi_avg_usart_DSP\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "template_Sdebounce_simple.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Marcello\Downloads\SOL_Lab9_acc_spi_avg_usart_DSP.zip_expanded\SOL_Lab9_acc_spi_avg_usart_DSP\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="template_Sdebounce_simple.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+template_Sdebounce_simple.elf: $(OBJS) $(USER_OBJS) C:\Users\andre\Desktop\Scuola\3.2\ Architetture\ e\ programm.\ sistemi\ elettronici\LABARCH2020\ Group15\progetto-labarch\template_Sdebounce_simple\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "template_Sdebounce_simple.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\andre\Desktop\Scuola\3.2 Architetture e programm. sistemi elettronici\LABARCH2020 Group15\progetto-labarch\template_Sdebounce_simple\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="template_Sdebounce_simple.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

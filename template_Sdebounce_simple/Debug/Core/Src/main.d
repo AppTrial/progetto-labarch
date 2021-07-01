@@ -38,8 +38,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h ../Core/Inc/spi.h \
  ../Core/Inc/main.h ../Core/Inc/tim.h ../Core/Inc/usart.h \
  ../Core/Inc/gpio.h ../Core/Inc/stm32f4_discovery_lis3dsh.h \
- ../Drivers/CMSIS/Include/arm_math.h ../Drivers/CMSIS/Include/core_cm4.h \
- ../Core/Inc/math_helper.h ../Core/Inc/noarm_cmsis.h
+ ../Core/Inc/arm_math.h ../Core/Inc/math_helper.h ../Core/Inc/arm_math.h \
+ ../Core/Inc/noarm_cmsis.h
 
 ../Core/Inc/main.h:
 
@@ -129,10 +129,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 
 ../Core/Inc/stm32f4_discovery_lis3dsh.h:
 
-../Drivers/CMSIS/Include/arm_math.h:
-
-../Drivers/CMSIS/Include/core_cm4.h:
+../Core/Inc/arm_math.h:
 
 ../Core/Inc/math_helper.h:
+
+../Core/Inc/arm_math.h:
 
 ../Core/Inc/noarm_cmsis.h:
