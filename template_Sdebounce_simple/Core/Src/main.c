@@ -1,7 +1,7 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file           : main.c mannaggia la madonna e mannaggia a dio
+  * @file           : main.c
   * @brief          : Campionamento accellerometro a 100Hz con applicazione di filtro FIR passa
   * 	              basso per filtrare ciascun asse dell'accellerometro a 4Hz. Calcolo
   * 	              orientamento planare e accensione del led più vicino al suolo.
@@ -50,6 +50,10 @@
 * Defines for each of the tests performed
 * ------------------------------------------------------------------- */
 
+// Define of FIR description
+#define TEST_LENGTH_SAMPLES 320 //Dimension of testInput array (arm_fir_data.c)
+#define NUM_TAPS 25 			//Number of coefficients
+#define BLOCK_SIZE ???????
 
 /* USER CODE END PD */
 
@@ -61,6 +65,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+
+// FIR
+uint32_t numBlocks = TEST_LENGTH_SAMPLES/BLOCK_SIZE;
 
 void Acc_Config(void);
 
@@ -86,6 +93,15 @@ void my_max(int16_t accData[SIZE][3], int16_t maxData[3]);
 #define FFT_Length 1024
 float32_t FFT_Input_Q15_f[50];
 float32_t aFFT_Input_Q15[50];
+
+// Coefficients of FIR filter
+const float32_t firCoeffs32[NUM_TAPS] = {
+		+0.0020104028f, +0.0016210204f, -0.0000000000f, -0.0044467088f, -0.0116854663f,
+		-0.0181342601f, -0.0167737131f, +0.0000000000f, +0.0358771087f, +0.0869769736f,
+		+0.1414878809f, +0.1834533329f, +0.1992268579f, +0.1834533329f, +0.1414878809f,
+		+0.0869769736f, +0.0358771087f, +0.0000000000f, -0.0167737131f, -0.0181342601f,
+		-0.0116854663f, -0.0044467088f, -0.0000000000f, +0.0016210204f, +0.0020104028f,
+};
 
 
 /* USER CODE END PV */

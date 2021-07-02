@@ -88,10 +88,9 @@ void Error_Handler(void);
 #define INT_2_GPIO_Port GPIOE
 /* USER CODE BEGIN Private defines */
 
-#define READ_PERIOD_MS     40 //   40ms because the assignment says 25Hz
+#define READ_PERIOD_MS     10 //   10ms because the assignment says 100Hz
 #define STREAM_PERIOD_MS 1000 // 1000ms because the assignment says 1s
 #define SIZE             (STREAM_PERIOD_MS / READ_PERIOD_MS) // don't forget the parentheses!
-
 
 /* USER CODE END Private defines */
 
